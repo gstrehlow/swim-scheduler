@@ -1,0 +1,19 @@
+{
+  "name": "swim-scheduler",
+  "version": "1.0.0",
+  "description": "[<img src=\"assets/BB_Logo_Wordmark_RGB_HorizontalWhite.jpg\" style=\"display: block; margin: 0 auto; width: clamp(300px, 37.5%, 600px\" />](assets/BB_Logo_Wordmark_RGB_HorizontalWhite.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gstrehlow/swim-scheduler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gstrehlow/swim-scheduler/issues"
+  },
+  "homepage": "https://github.com/gstrehlow/swim-scheduler#readme"
+}
