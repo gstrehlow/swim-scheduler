@@ -1,0 +1,18 @@
+.time-button {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50px;
+  border-style: solid;
+  color: #2586D2;
+  border-color: #2586D2;
+  padding: 1%;
+  margin: 3px;
+  background-color: white;
+  font-size: 15px;
+  width: 8%;
+}
+
+.time-button:hover {
+  cursor:pointer;
+  opacity: 50%;
+}

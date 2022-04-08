@@ -1,0 +1,7 @@
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    font-size: 10px;
+}

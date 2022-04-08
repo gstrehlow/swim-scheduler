@@ -1,0 +1,14 @@
+.cart {
+    color: white;
+    background-color: #2586D2;
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5%;
+}
+
+.cart:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
