@@ -1,0 +1,17 @@
+.morning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.afternoon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evening {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

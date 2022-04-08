@@ -2,13 +2,14 @@ import React from "react";
 import TimeCard from "../TimeCard";
 import "./styles.css";
 import moment from "moment";
-import data from "../../data/schedule_response.json";
 
-export default function Day() {
+export default function Day({ day, onClick }) {
+  console.log(day);
   return (
     <div className="day">
-      {data.map((item) => {
-        return <h1>{moment(item.date).format("ddd MM/DD")}</h1>;
+      <h1>{moment(day.date).format("ddd MM/DD")}</h1>
+      {day.times.map((item) => {
+        return <TimeCard time={item.time} onClick={onClick} />;
       })}
     </div>
   );
