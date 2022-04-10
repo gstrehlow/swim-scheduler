@@ -1,0 +1,16 @@
+.cart {
+  display: flex;
+  color: white;
+  background-color: #2586d2;
+  border: none;
+  border-radius: 4px;
+  font-size: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1%;
+  margin: 1%;
+}
+
+.cart:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
