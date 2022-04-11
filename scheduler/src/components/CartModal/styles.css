@@ -12,13 +12,17 @@
 .close-btn {
   background-color: red;
   border: none;
+  border-radius: 3px;
   color: white;
   display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .close-btn:hover {
   cursor: pointer;
-  opacity: 75%;
+  opacity: 50%;
 }
 
 .overlay {

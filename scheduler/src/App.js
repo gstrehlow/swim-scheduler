@@ -17,7 +17,10 @@ function App() {
           alt="shopping-cart"
         />
       </button>
-      <CartModal open={isOpen} onClose={() => setIsOpen(false)}></CartModal>
+      <CartModal open={isOpen} onClose={() => setIsOpen(false)}>
+        <button className="time-button timeWidth">4:00 PM</button>
+        <button className="time-button timeWidth">10:30 AM</button>
+      </CartModal>
       <Header />
       <TimeOfDaySchedule data={data} />
     </div>
