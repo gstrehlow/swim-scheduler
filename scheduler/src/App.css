@@ -14,3 +14,9 @@
   cursor: pointer;
   opacity: 50%;
 }
+
+.cart-details {
+  display: flex;
+  justify-content: center;
+}
+

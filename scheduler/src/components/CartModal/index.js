@@ -12,6 +12,7 @@ export default function CartModal({ open, children, onClose }) {
         <button className="close-btn" onClick={onClose}>
           x
         </button>
+        <p className="cart-title">Click on a time to remove it from cart!</p>
         {children}
       </div>
     </>,

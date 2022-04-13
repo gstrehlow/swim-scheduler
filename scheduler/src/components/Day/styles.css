@@ -1,6 +1,13 @@
 .day {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   font-size: 10px;
+  margin: 35px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .day {
+    flex-direction: column;
+  }
 }

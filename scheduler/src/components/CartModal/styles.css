@@ -10,7 +10,7 @@
 }
 
 .close-btn {
-  background-color: red;
+  background-color: #fc0303;
   border: none;
   border-radius: 3px;
   color: white;
@@ -33,4 +33,11 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+}
+
+.cart-title {
+  align-items: center;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
 }

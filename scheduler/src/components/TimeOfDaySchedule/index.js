@@ -2,11 +2,7 @@ import React from "react";
 import Day from "../Day";
 import "./styles.css";
 
-export default function TimeOfDaySchedule({ data }) {
-  const onTimeCardClick = (item) => {
-    console.log(item);
-  };
-
+export default function TimeOfDaySchedule({ data, onTimeCardClick }) {
   return (
     <div>
       {data.map((item) => (
