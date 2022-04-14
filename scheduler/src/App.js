@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "./data/schedule_response.json";
 import "./App.css";
 
-import TimeOfDaySchedule from "./components/TimeOfDaySchedule";
+import DayTime from "./components/DayTime";
 import Header from "./components/Header";
 import CartModal from "./components/CartModal";
 import TimeCard from "./components/TimeCard";
@@ -10,17 +10,15 @@ import TimeCard from "./components/TimeCard";
 function App() {
   const [cart, setCart] = useState([]);
 
-  const onTimeCardClick = (item) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const addToCart = (item) => {
     setCart((prev) => [...prev, item]);
   };
 
   const removeFromCart = (timeToRemove) => {
     setCart(cart.filter((time) => time !== timeToRemove));
   };
-
-  console.log(cart);
-
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -43,7 +41,7 @@ function App() {
         })}
       </CartModal>
       <Header />
-      <TimeOfDaySchedule data={data} onTimeCardClick={onTimeCardClick} />
+      <DayTime data={data} addToCart={addToCart} />
     </div>
   );
 }

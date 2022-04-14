@@ -1,11 +1,10 @@
 import React from "react";
-import ReactDom from "react-dom";
 import "./styles.css";
 
 export default function CartModal({ open, children, onClose }) {
   if (!open) return null;
 
-  return ReactDom.createPortal(
+  return (
     <>
       <div className="overlay" />
       <div className="cartModal">
@@ -18,7 +17,6 @@ export default function CartModal({ open, children, onClose }) {
         </p>
         {children}
       </div>
-    </>,
-    document.getElementById("portal")
+    </>
   );
 }
