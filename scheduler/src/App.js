@@ -18,6 +18,8 @@ function App() {
     setCart(cart.filter((time) => time !== timeToRemove));
   };
 
+  console.log(cart);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -31,10 +33,11 @@ function App() {
         ({cart.length})
       </button>
       <CartModal open={isOpen} onClose={() => setIsOpen(false)}>
-        {cart.map((time) => {
+        {cart.map((obj) => {
           return (
             <div className="cart-details">
-              <TimeCard time={time} onClick={() => removeFromCart(time)} />
+              <h3>{obj.day}</h3>
+              <TimeCard time={obj.time} onClick={() => removeFromCart(obj)} />
             </div>
           );
         })}

@@ -1,9 +1,10 @@
 .header {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 30px;
+  font-family: 'Cantata One', serif;
+  font-size: 50px;
   font-weight: bold;
   color: #2586d2;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
